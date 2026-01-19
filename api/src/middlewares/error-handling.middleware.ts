@@ -23,6 +23,8 @@ export const errorHandlingMiddleware = (
     return res.status(payload.statusCode).json(payload);
   }
 
+  console.error('[ErrorHandlingMiddleware] Uncaught Error:', err);
+
   const payload = new HttpErrorException(
     "Internal Server Error",
     err.message || JSON.stringify(err)

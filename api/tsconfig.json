@@ -10,7 +10,7 @@
     "esModuleInterop": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node16",
+    "moduleResolution": "node",
     "noEmit": true,
     "baseUrl": ".",
     "typeRoots": ["./src/typings", "./node_modules/@types"],
